@@ -20,7 +20,7 @@ class App extends React.Component {
                 <Switch>
                     <Route exact path='/' component={Home} />
                     <Route  const path='/:kind' component={(props) => (
-                        <Levels routeProps={props.match} />
+                        <Alphabet routeProps={props.match} />
                     )}/>
                 </Switch>
             </div>

@@ -28,7 +28,7 @@ class LevelsList extends React.Component {
             <div className="container">
                 <h1>{this.state.text}</h1>
             </div>
-            <div className="container">
+            <div className="container-game">
                 <div className={this.state.class}>
                     <Link replace to={`${this.state.url}easy`} className="levels" onClick={(e) => this.disapear(e)} >Easy</Link>
                     <Link replace to={`${this.state.url}medium`} className="levels" onClick={(e) => this.disapear(e)} >Medium</Link>

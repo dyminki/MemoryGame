@@ -40,14 +40,24 @@ body {
     margin-top: '0.5em';
 }
 
-.container {
+.container{
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 600px;
     position: relative;
+    max-width: 600px;
+}
+
+.container-game{
+    margin: 0 auto;
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
 }
 
 .box,

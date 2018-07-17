@@ -32,7 +32,7 @@ class Game extends React.Component {
             <div className="container">
                 <h3>LEVEL {checkTheLevel()}</h3>
             </div>
-            <div className="container">
+            <div className="container-game">
                 <div className="box game">
                     <Card text={this.state.text}/>
                 </div>
