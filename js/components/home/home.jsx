@@ -29,17 +29,12 @@ class Home extends React.Component {
     render () {
         return <div>
         <div className="container">
-            <h1> Hiragana </h1>
-            <h1> & </h1>
-            <h1> Katakana </h1>
+            <h1> Hiragana & Katakana</h1>
         </div>
         <div className="container">
             <div className="box">
-                <Link to="/hiragana/" className={this.state.classH} >{this.state.textH}</Link>
-                <Link to="/katakana/" className={this.state.classK} >{this.state.textK}</Link>
-                <div> 
-                    {this.state.text}
-                </div>
+                <Link to="/hiragana" className={this.state.classH} >{this.state.textH}</Link>
+                <Link to="/katakana" className={this.state.classK} >{this.state.textK}</Link>
             </div>
         </div>
         <div className="container">

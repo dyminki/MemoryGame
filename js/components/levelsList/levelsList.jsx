@@ -14,15 +14,11 @@ class LevelsList extends React.Component {
         super(props)
         this.state = {
             class: "box game",
-            text: this.props.text,
-            url: this.props.url
+            text: this.props.match.params.kind,
+            url: this.props.match.url
         }
     }
-    disapear = (e) => {
-        this.setState({
-            class: 'invisible'
-        })
-    }
+
     render () {
         return <div>
             <div className="container">
@@ -30,19 +26,10 @@ class LevelsList extends React.Component {
             </div>
             <div className="container-game">
                 <div className={this.state.class}>
-                    <Link replace to={`${this.state.url}easy`} className="levels" onClick={(e) => this.disapear(e)} >Easy</Link>
-                    <Link replace to={`${this.state.url}medium`} className="levels" onClick={(e) => this.disapear(e)} >Medium</Link>
-                    <Link replace to={`${this.state.url}hard`} className="levels" onClick={(e) => this.disapear(e)} >Hard</Link>
+                    <Link  to={`${this.props.match.url}/easy`} className="levels">Easy</Link>
+                    <Link  to={`${this.props.match.url}/medium`} className="levels">Medium</Link>
+                    <Link  to={`${this.props.match.url}/hard`} className="levels">Hard</Link>
                 </div>
-                <Route   const path={`${this.state.url}easy`} component={(props) => (
-                    <Game routeProps={props.match} text={this.state.text}/>
-                )}/> 
-                <Route   const path={`${this.state.url}medium`} component={(props) => (
-                    <Game routeProps={props.match} text={this.state.text}/>
-                )}/> 
-                <Route   const path={`${this.state.url}hard`} component={(props) => (
-                    <Game routeProps={props.match} text={this.state.text}/>
-                )}/> 
             </div>
         </div>
     }

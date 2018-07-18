@@ -8,7 +8,9 @@ import {
   } from 'react-router-dom';
 
 import { Home } from './home/home.jsx';
-import { Alphabet } from './alphabet/alphabet.jsx';
+import {LevelsList} from './levelsList/levelsList.jsx'
+import {Game} from './game/game.jsx'
+
 
 class App extends React.Component {
     render () {
@@ -19,9 +21,8 @@ class App extends React.Component {
                 </div>
                 <Switch>
                     <Route exact path='/' component={Home} />
-                    <Route  const path='/:kind' component={(props) => (
-                        <Alphabet routeProps={props.match} />
-                    )}/>
+                    <Route exact path='/:kind' component={LevelsList}/>
+                    <Route path={`/:kind/:level`} component={Game} />
                 </Switch>
             </div>
         </HashRouter>;
