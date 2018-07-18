@@ -7,8 +7,6 @@ import {
     NavLink,
   } from 'react-router-dom';
 
-import { Alphabet } from '../alphabet/alphabet.jsx';
-
 class Home extends React.Component {
     constructor(props){
         super(props)

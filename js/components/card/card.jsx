@@ -10,16 +10,24 @@ class Card extends React.Component {
         const levelArray = this.whatLevel([...file]);
         const shuffleA = this.shuffleArray([...levelArray, ...levelArray]);
         
+        
         this.state = {
             level: this.props.level,
             text: this.props.text,
             file: shuffleA,
-            class: 'panel ',
+            class: this.props.class,
             activeElements: [],
-            tab: [],
             comparingId: [],
-            score: 0
+            matchedCards: [],
+            gameOver: ''
         }
+    }
+    componentDidMount() {
+        this.timeoutId = setTimeout( () => {
+            this.setState({
+                class: 'panel '
+            })
+        }, 2000)
     }
     whatLevel = (arr) => {
         if(this.props.level === "easy") {
@@ -38,48 +46,66 @@ class Card extends React.Component {
     }
     shuffleArray(array) {
         for (let i = array.length - 1; i > 0; i--) {
-          let j = Math.floor(Math.random() * (i + 1));
-          [array[i], array[j]] = [array[j], array[i]];
+            let j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
         }
         return array;
     }
-    onClick = (e, i, j) => {
-        this.flipTheCard(e, i);
-        this.checkTheId(e, j)
+    onClick = (e, index, cardId) => {
+        this.flipTheCard(e, index);
+        this.checkTheId(e, cardId)
+       
     }
-    flipTheCard = (e, i, j) => {
+    flipTheCard = (e, index) => {
         this.setState({
-            activeElements: this.state.activeElements.length < 2 ?[...this.state.activeElements, i] : [],
+            activeElements: this.state.activeElements.length < 2 ?[...this.state.activeElements, index] : [],
         })    
     }
-    checkTheId = (e, j) => {
-        console.log(j);
-        if (this.state.comparingId.length > -1) {
+    checkTheId = (e, cardId) => {
+        if (this.state.comparingId.length > -1) { 
             this.setState({
-                comparingId: this.state.comparingId.length < 2 ?[...this.state.comparingId, j] : []
+                comparingId: this.state.comparingId.length < 2 ? [...this.state.comparingId, cardId] : []
+            }, () => {
+                if( this.state.comparingId.length !== 0 && 
+                    this.state.comparingId[0] === this.state.comparingId[1] ) {
+                    this.setState({
+                        matchedCards: [...this.state.matchedCards, cardId]
+                    })
+                }
             })
-           
         }
-        if (this.state.comparingId[0] === this.state.comparingId[1] && this.state.comparingId.length !== 0) {
-            this.setState({
-            score: this.state.score + 1
-            })
-            console.log(this.state.score)
-        }
-        console.log(this.state.comparingId);
     }
     getTheCards = (kind) => {
-        let tab = []
+        let tab = [];
         for (let i=0; i < kind.length; i++) {   
+            let divCliked = false;
             let boxBack = {
                 backgroundImage: `url('${kind[i].url}')`
             }
-            let classElem = "panel "
-            classElem += this.state.activeElements.indexOf(i) > -1 ? 'flip' : ""
+            let classElem = this.state.class
 
+            classElem += this.state.activeElements.indexOf(i) > -1 ? 'flip' : "";
+
+            if (this.state.matchedCards.indexOf(kind[i].id) > -1){
+                classElem += ' color';
+                divCliked = true;
+            } 
+            let gameOver = this.setState.gameOver
+            if (this.state.level === "easy" && this.state.matchedCards.length === 10){
+                console.log('poziom easy');
+                gameOver += "gameover"
+                
+            }
+            if (this.state.level === "medium" && this.state.matchedCards.length === 16) {
+                console.log('poziom medium');
+            }
+            if (this.state.level === "hard" && this.state.matchedCards.length === 45) {
+                console.log('poziom hard');
+            }
+            
             const elem = <div key={i} 
-                            className={classElem} 
-                            onClick={(e) => this.onClick(e, i, kind[i].id)}>
+                            className={ !divCliked ? classElem : "panel flip color"} 
+                            onClick={ !divCliked ? (e) => this.onClick(e, i, kind[i].id) : null }>
 
                         <div className="front">
                             <div className="box-card box-front"></div>
@@ -95,7 +121,7 @@ class Card extends React.Component {
     }
     render () {
         let tab = this.getTheCards(this.state.file)
-        return <div>
+        return <div className={this.state.gameOver}>
             {tab}
         </div>
     }

@@ -56,7 +56,6 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-
 }
 
 .box,
@@ -90,6 +89,18 @@ body {
     display: none;
 }
 
+.easy {
+    max-width: 600px;
+}
+
+.medium {
+    max-width: 900px;
+}
+
+.hard {
+    max-width: 100vw;
+}
+
 .hide {
     visibility: hidden;
 }
@@ -99,7 +110,6 @@ body {
     border-radius: 1em;
     padding: 0.5em;
     width: 70%;
-    
 }
 
 .game {
@@ -171,7 +181,14 @@ body {
         -moz-transform: rotateX(0deg) rotateY(0deg);
     }
 }
-
+.color {
+    opacity: 0.1;
+    
+    &:hover {
+        opacity: 0.1;
+        cursor: default;
+    }
+}
 .lotos {
     background-image: url(../images/lotos.png);
     position:  absolute;
@@ -199,6 +216,13 @@ body {
         font-size: 1em;
     }
     .levels {
-        width: 80%;
+        width: 100%;
+        font-size: 1.9em;
     }
+  }
+
+  .gameover {
+      background-color: #F88181;
+      width: 100vw;
+      height: 100vh;
   }
