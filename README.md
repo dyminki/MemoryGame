@@ -1,5 +1,5 @@
-# To Do List
-Group project
+# Memory Game
+For practising japanese alphabet hiragana and katakana .
 
 ### Build with
 - React
@@ -11,4 +11,4 @@ Group project
 
 ### Screenshoot
 
-![Image](https://github.com/dyminki/ToDoList/blob/master/memory.jpg)
+![Image](https://github.com/dyminki/MemoryGame/blob/master/memory.jpg)
