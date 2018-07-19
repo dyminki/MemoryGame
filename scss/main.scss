@@ -40,13 +40,16 @@ body {
     margin-top: '0.5em';
 }
 
+.activeStyle-levels{
+    font-size: 1em;
+}
+
 .container{
     margin: 0 auto;
     width: 90%;
-
-   text-align: center;
+    text-align: center;
     position: relative;
-    max-width: 600px;
+    width: 650px;
 }
 
 .container-game{
@@ -201,7 +204,13 @@ body {
     background-repeat: no-repeat;
 }
 
-@media all and (max-width:650px) {
+  .gameover {
+    background-position: center;
+    background-image: url(../images/gameover.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+  }
+  @media all and (max-width:650px) {
     .container {
       width: 90vw;
     }
@@ -215,14 +224,50 @@ body {
     h1 {
         font-size: 1em;
     }
+  
+    .levels {
+        width: 100%;
+        font-size: 1.6em;
+    }
+  }
+
+
+  @media all and (min-width:1650px) {
+    .container {
+      width: 55vw;
+    }
+    .box {
+        display: inline-block;
+       
+    }
+    .box-katakana,
+    .box-hiragana {
+        width: 40%;
+        font-size: 3em;
+        padding: 1em;
+    }
+    
+    body{
+        h1 {
+            font-size: 4.5em;
+        }
+        h3 {
+            font-size: 2em;
+        }
+        a {
+            font-size: 2.5em;
+        }
+    }
+        
+    .lotos {
+        left: -8em;
+        height: 15em;
+        width: 26em;
+    }
+    
+   
     .levels {
         width: 100%;
         font-size: 1.9em;
     }
-  }
-
-  .gameover {
-      background-color: #F88181;
-      width: 100vw;
-      height: 100vh;
   }

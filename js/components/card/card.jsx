@@ -19,7 +19,6 @@ class Card extends React.Component {
             activeElements: [],
             comparingId: [],
             matchedCards: [],
-            gameOver: ''
         }
     }
     componentDidMount() {
@@ -83,26 +82,12 @@ class Card extends React.Component {
                 backgroundImage: `url('${kind[i].url}')`
             }
             let classElem = this.state.class
-
             classElem += this.state.activeElements.indexOf(i) > -1 ? 'flip' : "";
 
             if (this.state.matchedCards.indexOf(kind[i].id) > -1){
                 classElem += ' color';
                 divCliked = true;
             } 
-            let gameOver = this.setState.gameOver
-            if (this.state.level === "easy" && this.state.matchedCards.length === 10){
-                console.log('poziom easy');
-                gameOver += "gameover"
-                
-            }
-            if (this.state.level === "medium" && this.state.matchedCards.length === 16) {
-                console.log('poziom medium');
-            }
-            if (this.state.level === "hard" && this.state.matchedCards.length === 45) {
-                console.log('poziom hard');
-            }
-            
             const elem = <div key={i} 
                             className={ !divCliked ? classElem : "panel flip color"} 
                             onClick={ !divCliked ? (e) => this.onClick(e, i, kind[i].id) : null }>
@@ -114,14 +99,25 @@ class Card extends React.Component {
                             <div className={`box-card`} style={boxBack}></div>
                         </div>
             </div> 
-            
             tab.push(elem);
         }
         return tab;
     }
+    gameOver = () => {
+        let gameOver = "gameover";
+        if (this.state.level === "easy" && this.state.matchedCards.length === 10){
+            return gameOver
+        }
+        if (this.state.level === "medium" && this.state.matchedCards.length === 16) {         
+            return gameOver
+        }
+        if (this.state.level === "hard" && this.state.matchedCards.length === 46) {           
+            return gameOver
+        }
+    }
     render () {
         let tab = this.getTheCards(this.state.file)
-        return <div className={this.state.gameOver}>
+        return <div className={this.gameOver()}>
             {tab}
         </div>
     }

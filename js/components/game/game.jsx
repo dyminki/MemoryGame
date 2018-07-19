@@ -1,4 +1,11 @@
 import React from 'react';
+import {
+    HashRouter,
+    Route,
+    Link,
+    Switch,
+    NavLink,
+  } from 'react-router-dom';
 
 import { Card } from '../card/card.jsx';
 
@@ -52,7 +59,7 @@ class Game extends React.Component {
             </div>
             <div className="container-game">
                 <div className={this.state.boxClass}>
-                    <Card text={this.state.text} level={checkTheLevel()} class={this.state.class}/>
+                    <Card text={this.state.text} level={checkTheLevel()} class={this.state.class} />
                 </div>
             </div>
         </div>
