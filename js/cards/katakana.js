@@ -73,7 +73,7 @@ module.exports = [
     },
     {
         id: 18,
-        url: '../images/katakana/te.png',
+        url: './images/katakana/te.png',
     },
     {
         id: 19,
