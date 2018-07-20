@@ -1,35 +1,35 @@
 module.exports = [
     {
         id: 0,
-        url: '../images/hiragana/a.png',
+        url: './images/hiragana/a.png',
     },
     {
         id: 1,
-        url: '../images/hiragana/i.png',
+        url: './images/hiragana/i.png',
     },
     {
         id: 2,
-        url: '../images/hiragana/u.png',
+        url: './images/hiragana/u.png',
     },
     {
         id: 3,
-        url: '../images/hiragana/e.png',
+        url: './images/hiragana/e.png',
     },
     {
         id: 4,
-        url: '../images/hiragana/o.png',
+        url: './images/hiragana/o.png',
     },
     {
         id: 5,
-        url: '../images/hiragana/ka.png',
+        url: './images/hiragana/ka.png',
     },
     {
         id: 6,
-        url: '../images/hiragana/ki.png',
+        url: './images/hiragana/ki.png',
     },
     {
         id: 7,
-        url: '../images/hiragana/ku.png',
+        url: './images/hiragana/ku.png',
     },
     {
         id: 8,
