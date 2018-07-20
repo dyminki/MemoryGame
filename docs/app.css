@@ -136,7 +136,7 @@ body {
     width: 100px;
     height: 100px; }
   .panel .box-front {
-    background-image: url(images/front.png); }
+    background-image: url(images/hiragana/a.png); }
 
 .panel.flip .front {
   z-index: 900;
