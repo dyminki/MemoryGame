@@ -33,154 +33,154 @@ module.exports = [
     },
     {
         id: 8,
-        url: '../images/hiragana/ke.png',
+        url: './images/hiragana/ke.png',
     },
     {
         id: 9,
-        url: '../images/hiragana/ko.png',
+        url: './images/hiragana/ko.png',
     },
     {
         id: 10,
-        url: '../images/hiragana/sa.png',
+        url: './images/hiragana/sa.png',
     },
     {
         id: 11,
-        url: '../images/hiragana/shi.png',
+        url: './images/hiragana/shi.png',
     },
     {
         id: 12,
-        url: '../images/hiragana/su.png',
+        url: './images/hiragana/su.png',
     },
     {
         id: 13,
-        url: '../images/hiragana/se.png',
+        url: './images/hiragana/se.png',
     },
     {
         id: 14,
-        url: '../images/hiragana/so.png',
+        url: './images/hiragana/so.png',
     },
     {
         id: 15,
-        url: '../images/hiragana/ta.png',
+        url: './images/hiragana/ta.png',
     },
     {
         id: 16,
-        url: '../images/hiragana/chi.png',
+        url: './images/hiragana/chi.png',
     },
     {
         id: 17,
-        url: '../images/hiragana/tsu.png',
+        url: './images/hiragana/tsu.png',
     },
     {
         id: 18,
-        url: '../images/hiragana/te.png',
+        url: './images/hiragana/te.png',
     },
     {
         id: 19,
-        url: '../images/hiragana/to.png',
+        url: './images/hiragana/to.png',
     },
     {
         id: 20,
-        url: '../images/hiragana/na.png',
+        url: './images/hiragana/na.png',
     },
     {
         id: 21,
-        url: '../images/hiragana/ni.png',
+        url: './images/hiragana/ni.png',
     },
     {
         id: 22,
-        url: '../images/hiragana/nu.png',
+        url: './images/hiragana/nu.png',
     },
     {
         id: 23,
-        url: '../images/hiragana/ne.png',
+        url: './images/hiragana/ne.png',
     },
     {
         id: 24,
-        url: '../images/hiragana/no.png',
+        url: './images/hiragana/no.png',
     },
     {
         id: 25,
-        url: '../images/hiragana/ha.png',
+        url: './images/hiragana/ha.png',
     },
     {
         id: 26,
-        url: '../images/hiragana/hi.png',
+        url: './images/hiragana/hi.png',
     },
     {
         id: 27,
-        url: '../images/hiragana/fu.png',
+        url: './images/hiragana/fu.png',
     },
     {
         id: 28,
-        url: '../images/hiragana/he.png',
+        url: './images/hiragana/he.png',
     },
     {
         id: 29,
-        url: '../images/hiragana/ho.png',
+        url: './images/hiragana/ho.png',
     },
     {
         id: 30,
-        url: '../images/hiragana/ma.png',
+        url: './images/hiragana/ma.png',
     },
     {
         id: 31,
-        url: '../images/hiragana/mi.png',
+        url: './images/hiragana/mi.png',
     },
     {
         id: 32,
-        url: '../images/hiragana/mu.png',
+        url: './images/hiragana/mu.png',
     },
     {
         id: 33,
-        url: '../images/hiragana/me.png',
+        url: './images/hiragana/me.png',
     },
     {
         id: 34,
-        url: '../images/hiragana/mo.png',
+        url: './images/hiragana/mo.png',
     },
     {
         id: 35,
-        url: '../images/hiragana/ra.png',
+        url: './images/hiragana/ra.png',
     },
     {
         id: 36,
-        url: '../images/hiragana/ri.png',
+        url: './images/hiragana/ri.png',
     },
     {
         id: 37,
-        url: '../images/hiragana/ru.png',
+        url: './images/hiragana/ru.png',
     },
     {
         id: 38,
-        url: '../images/hiragana/re.png',
+        url: './images/hiragana/re.png',
     },
     {
         id: 39,
-        url: '../images/hiragana/ro.png',
+        url: './images/hiragana/ro.png',
     },
     {
         id: 40,
-        url: '../images/hiragana/ya.png',
+        url: './images/hiragana/ya.png',
     },
     {
         id: 41,
-        url: '../images/hiragana/yo.png',
+        url: './images/hiragana/yo.png',
     },
     {
         id: 42,
-        url: '../images/hiragana/yu.png',
+        url: './images/hiragana/yu.png',
     },
     {
         id: 43,
-        url: '../images/hiragana/wa.png',
+        url: './images/hiragana/wa.png',
     },
     {
         id: 44,
-        url: '../images/hiragana/wo.png',
+        url: './images/hiragana/wo.png',
     },
     {
         id: 45,
-        url: '../images/hiragana/n.png',
+        url: './images/hiragana/n.png',
     },
 ]
