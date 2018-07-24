@@ -1,14 +1,15 @@
 # Memory Game
 For practising japanese alphabet hiragana and katakana .
 
-### Build with
+# Technologies used
 - React
+- Rreact Router
 - SASS
 
-### **PNGs By me**
+##  PNGs By me
 
 [Live DEMO](https://dyminki.github.io/MemoryGame/)
 
-### Screenshoot
+# Screenshoot
 
 ![Image](https://github.com/dyminki/MemoryGame/blob/master/memory.jpg)

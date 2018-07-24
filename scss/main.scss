@@ -188,7 +188,6 @@ body {
 }
 .color {
     opacity: 0.1;
-    
     &:hover {
         opacity: 0.1;
         cursor: default;
@@ -206,12 +205,13 @@ body {
     background-repeat: no-repeat;
 }
 
-  .gameover {
+.gameover {
     background-position: center;
     background-image: url(../images/gameover.png);
     background-size: 70%;
     background-repeat: no-repeat;
-  }
+}
+
   @media all and (max-width:650px) {
     .container {
       width: 90vw;

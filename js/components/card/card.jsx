@@ -10,7 +10,6 @@ class Card extends React.Component {
         const levelArray = this.whatLevel([...file]);
         const shuffleA = this.shuffleArray([...levelArray, ...levelArray]);
         
-        
         this.state = {
             level: this.props.level,
             text: this.props.text,
@@ -104,7 +103,7 @@ class Card extends React.Component {
         return tab;
     }
     gameOver = () => {
-        let gameOver = "gameover";
+        const gameOver = "gameover";
         if (this.state.level === "easy" && this.state.matchedCards.length === 10){
             return gameOver
         }
