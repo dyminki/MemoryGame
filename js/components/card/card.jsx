@@ -7,7 +7,8 @@ class Card extends React.Component {
         super(props)
 
         const file = this.props.text.includes('hiragana') ? hiragana : katakana;
-        const levelArray = this.whatLevel([...file]);
+        const fileSuffled = this.shuffleArray([...file]);
+        const levelArray = this.whatLevel([...fileSuffled]);
         const shuffleA = this.shuffleArray([...levelArray, ...levelArray]);
         
         this.state = {
