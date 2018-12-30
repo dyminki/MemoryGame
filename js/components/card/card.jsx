@@ -65,7 +65,9 @@ class Card extends React.Component {
                 comparingId: this.state.comparingId.length < 2 ? [...this.state.comparingId, cardId] : []
             }, () => {
                 if( this.state.comparingId.length !== 0 && 
-                    this.state.comparingId[0] === this.state.comparingId[1] ) {
+                    this.state.comparingId[0] === this.state.comparingId[1] &&
+                    this.state.activeElements.length === 2 && 
+                    this.state.activeElements[0] !== this.state.activeElements[1]){
                     this.setState({
                         matchedCards: [...this.state.matchedCards, cardId]
                     })

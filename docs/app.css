@@ -6,7 +6,8 @@
 
 :root {
   background-color: #D1D1D1;
-  font-size: 16px; }
+  font-size: 16px;
+  text-transform: uppercase; }
 
 body {
   font-family: 'Julius Sans One', sans-serif;

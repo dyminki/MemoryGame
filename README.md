@@ -1,5 +1,5 @@
 # Memory Game
-For practising japanese alphabet hiragana and katakana .
+For practising japanese alphabet hiragana and katakana therefore cards do not hide automatically, the player must click to hide them.
 
 # Technologies used
 - React
