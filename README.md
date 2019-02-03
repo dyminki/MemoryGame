@@ -6,7 +6,8 @@ For practising japanese alphabet hiragana and katakana therefore cards do not hi
 - Rreact Router
 - SASS
 
-##  PNGs By me
+#  PNGs
+- by me
 
 [Live DEMO](https://dyminki.github.io/MemoryGame/)
 

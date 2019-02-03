@@ -9,7 +9,7 @@
     "start": "webpack-dev-server --env.dev --inline --hot"
   },
   "keywords": [],
-  "author": "",
+  "author": "dyminki",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^8.4.1",
