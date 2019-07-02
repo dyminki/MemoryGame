@@ -1,5 +1,7 @@
 # Memory Game
-For practising japanese alphabet hiragana and katakana therefore cards do not hide automatically, the player must click to hide them.
+For practising japanese alphabet hiragana and katakana therefore cards do not hide automatically, the player must click to hide them.  
+
+[Live DEMO](https://dyminki.github.io/MemoryGame/)
 
 # Technologies used
 - React
@@ -8,8 +10,6 @@ For practising japanese alphabet hiragana and katakana therefore cards do not hi
 
 #  PNGs
 - by me
-
-[Live DEMO](https://dyminki.github.io/MemoryGame/)
 
 # Screenshoot
 
